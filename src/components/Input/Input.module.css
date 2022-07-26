@@ -1,0 +1,26 @@
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.radioWrapper {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.radio {
+    margin-left: 25px;
+    margin-right: 5px;
+}
+
+.inputLabel {
+    color: #888888;
+    font-size: 0.75em;
+}
+
+.input {
+    padding: 5px;
+    margin: 10px;
+    min-width: 340px;
+    height: 30px;
+}

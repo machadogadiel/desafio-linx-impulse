@@ -1,0 +1,21 @@
+.title {
+    margin-top: 50px;
+    width: 50%;
+    text-align: center;
+    background-image: linear-gradient(#707070, #707070);
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    background-position: 0 center;
+}
+
+.titleText {
+    padding: 20px;
+    background-color: white;
+    font-weight: 600;
+}
+
+@media (max-width: 800px) {
+    .title {
+        width: 100%;
+    }
+}

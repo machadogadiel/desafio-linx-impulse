@@ -1,0 +1,13 @@
+.footerStyle {
+    height: 300px;
+    width: 100%;
+    background-color: #707070;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 99vw solid transparent;
+    border-top: 180px solid white;
+}

@@ -1,0 +1,35 @@
+.productContainer span {
+    margin: 0 0 0 0;
+    font-size: 14px;
+}
+
+.productContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    text-align: left;
+}
+
+.priceContainer {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.mockupImg {
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+    border: 1px solid #707070;
+}
+
+@media (max-width: 800px) {
+    .mockupImg {
+        margin: 1em;
+    }
+
+    .productContainer {
+        flex-direction: row;
+    }
+}
