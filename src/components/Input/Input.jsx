@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './Input.module.css'
 
-const TextInput = ({ id, label, type }) => {
+const TextInput = ({ id, label, type, pattern }) => {
   const { input, inputLabel, inputWrapper } = style
 
   return (
@@ -13,7 +13,8 @@ const TextInput = ({ id, label, type }) => {
 
       <input
         className={input}
-        type={type != null ? 'text' : type}
+        type={type != null ? type : 'text'}
+        pattern={pattern}
         id={id}
       />
 

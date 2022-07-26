@@ -3,7 +3,7 @@ import Button from '../Button/Button'
 import style from './Product.module.css'
 
 const Product = ({ productData }) => {
-  const { mockupImg, productContainer, priceContainer } = style
+  const { mockupImg, productContainer, priceContainer, infoContainer } = style
   const { name, image, oldPrice, price, description, installments } = productData
 
   // console.log(id, name, image, oldPrice, price, description, installments)
@@ -12,7 +12,7 @@ const Product = ({ productData }) => {
     <div className={productContainer}>
       <img className={mockupImg} src={image}></img>
 
-      <div>
+      <div className={infoContainer}>
         <div>
           <span style={{ fontWeight: '500' }}>{name}</span>
           <p style={{ fontSize: '12px' }}>{description}</p>

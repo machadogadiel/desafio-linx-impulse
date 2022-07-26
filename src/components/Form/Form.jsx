@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '../Button/Button'
 import RadioInput from '../Input/RadioInput'
-import TextInput from '../Input/TextInput'
+import Input from '../Input/Input'
 import style from './Form.module.css'
 
 const Form = () => {
@@ -22,9 +22,13 @@ const Form = () => {
       </div>
 
       <form className={algoForm}>
-        <TextInput label='Seu nome:' id='inputName' />
-        <TextInput label='E-mail:' id='inputEmail' />
-        <TextInput label='CPF:' id='inputCPF' />
+        <Input label='Seu nome:' id='inputName' />
+        <Input label='E-mail:' id='inputEmail' type='email' />
+        <Input
+          label='CPF:'
+          id='inputCPF'
+          pattern='^[0-9]{11}$'
+        />
 
         <div className={radioBtnContainer}>
           <RadioInput value='Masculino' />

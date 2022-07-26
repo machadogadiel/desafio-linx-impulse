@@ -9,8 +9,7 @@
 }
 
 .radio {
-    margin-left: 25px;
-    margin-right: 5px;
+    margin: 5px;
 }
 
 .inputLabel {
@@ -23,4 +22,10 @@
     margin: 10px;
     min-width: 340px;
     height: 30px;
+}
+
+@media (max-width: 400px) {
+    .input {
+        min-width: unset;
+    }
 }
